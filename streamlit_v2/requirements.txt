@@ -1,0 +1,10 @@
+apache-airflow
+requests
+pandas
+scikit-learn==1.5.0
+streamlit
+pydeck
+typing-extensions
+psycopg2-binary
+celery
+redis

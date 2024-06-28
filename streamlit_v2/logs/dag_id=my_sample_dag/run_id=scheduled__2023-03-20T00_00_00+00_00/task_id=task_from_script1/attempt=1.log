@@ -1,0 +1,15 @@
+[2024-06-27T15:08:03.884+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T15:08:04.355+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_sample_dag.task_from_script1 scheduled__2023-03-20T00:00:00+00:00 [queued]>
+[2024-06-27T15:08:04.452+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_sample_dag.task_from_script1 scheduled__2023-03-20T00:00:00+00:00 [queued]>
+[2024-06-27T15:08:04.467+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-06-27T15:08:04.926+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task_from_script1> on 2023-03-20 00:00:00+00:00
+[2024-06-27T15:08:05.102+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2128) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-27T15:08:05.169+0000] {standard_task_runner.py:63} INFO - Started process 2276 to run task
+[2024-06-27T15:08:05.246+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'my_sample_dag', 'task_from_script1', 'scheduled__2023-03-20T00:00:00+00:00', '--job-id', '159', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmpxuy71dko']
+[2024-06-27T15:08:05.361+0000] {standard_task_runner.py:91} INFO - Job 159: Subtask task_from_script1
+[2024-06-27T15:08:05.893+0000] {task_command.py:426} INFO - Running <TaskInstance: my_sample_dag.task_from_script1 scheduled__2023-03-20T00:00:00+00:00 [running]> on host dccfc2b642a8
+[2024-06-27T15:08:06.720+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_sample_dag' AIRFLOW_CTX_TASK_ID='task_from_script1' AIRFLOW_CTX_EXECUTION_DATE='2023-03-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-03-20T00:00:00+00:00'
+[2024-06-27T15:08:06.736+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T15:08:08.133+0000] {logging_mixin.py:188} INFO - Données API ok..
